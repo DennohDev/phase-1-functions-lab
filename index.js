@@ -1,11 +1,7 @@
 // Code your solution in this file!
 
 function distanceFromHqInBlocks(pickUpLocation){
-    if (pickUpLocation < 42) {
-        return (42 - pickUpLocation)
-    } else {
-        return pickUpLocation - 42
-    }
+    return pickUpLocation > 42 ? pickUpLocation - 42 : 42 - pickUpLocation
 }
 
 function distanceFromHqInFeet (pickUpLocation){
@@ -13,11 +9,7 @@ function distanceFromHqInFeet (pickUpLocation){
 }
 
 function distanceTravelledInFeet (pickUpLocation, destination) {
-    if (destination < pickUpLocation) {
-        return (pickUpLocation - destination) * 264
-    } else {
-        return (destination - pickUpLocation) * 264
-    }
+    return destination < pickUpLocation ? (pickUpLocation - destination) * 264 : (destination - pickUpLocation) * 264
 }
 
 function calculatesFarePrice(start, destination) {
